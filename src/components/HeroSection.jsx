@@ -5,8 +5,11 @@ import './HeroSection.css';
 
 // Which part of hero-pic.png to keep in frame when it gets cropped to fill
 // the screen. Nudge the vertical (second) value: lower % shows more roof,
-// higher % shows more of the ground floor/sign.
-const IMAGE_FOCUS = 'center 100%';
+// higher % shows more of the ground floor/sign. MOBILE_IMAGE_FOCUS is used
+// instead on narrow screens (see .hero-image media query in HeroSection.css),
+// since phones crop the image much tighter than desktop.
+const IMAGE_FOCUS = 'center 80%';
+const MOBILE_IMAGE_FOCUS = 'center 50%';
 
 const HeroSection = () => {
   const [opacity, setOpacity] = useState(1);
@@ -30,6 +33,7 @@ const HeroSection = () => {
         style={{
           backgroundImage: "url('/assets/hero-pic.png')",
           backgroundPosition: IMAGE_FOCUS,
+          '--hero-mobile-focus': MOBILE_IMAGE_FOCUS,
           opacity,
         }}
       />
