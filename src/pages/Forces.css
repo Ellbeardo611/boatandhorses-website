@@ -1,0 +1,135 @@
+.forces-page {
+  background: #fff;
+  padding: 2.5rem 1.5rem 6rem;
+}
+
+.forces-page-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.forces-page-eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--accent);
+  border-bottom: 2px solid var(--accent);
+  display: inline-block;
+  padding-bottom: 0.4rem;
+  margin: 0 0 1.25rem;
+}
+
+.forces-page-title {
+  font-size: 2.25rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 0 0 2rem;
+}
+
+.forces-page-subtitle {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 0 0 1.75rem;
+}
+
+.forces-page-copy {
+  color: #1a1a1a;
+  font-size: 1.05rem;
+  line-height: 1.75;
+}
+
+.forces-page-copy p {
+  margin: 0 0 1.25rem;
+}
+
+.forces-page-overview {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+}
+
+.forces-page-overview-photo {
+  flex: 1 1 280px;
+  width: 100%;
+  min-width: 0;
+  max-width: 380px;
+  aspect-ratio: 4 / 3;
+  border-radius: 12px;
+  object-fit: contain;
+  background: #f7f7f9;
+  display: block;
+}
+
+.forces-page-overview .forces-page-copy {
+  flex: 2 1 320px;
+}
+
+.forces-page-section {
+  margin-top: 4.5rem;
+  padding-top: 3.5rem;
+  border-top: 1px solid #e5e5e5;
+}
+
+.forces-page-tour-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.forces-page-tour-list li {
+  color: #1a1a1a;
+  font-size: 1.05rem;
+  padding: 0.85rem 1.1rem;
+  background: #f7f7f9;
+  border-radius: 8px;
+  border-left: 3px solid var(--accent);
+}
+
+.forces-page-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.forces-page-gallery-item {
+  border-radius: 10px;
+  overflow: hidden;
+  background: #f2f2f5;
+  aspect-ratio: 4 / 3;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.forces-page-gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+@media (min-width: 720px) {
+  .forces-page-gallery {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .forces-page-title {
+    font-size: 1.75rem;
+  }
+
+  .forces-page-subtitle {
+    font-size: 1.35rem;
+  }
+
+  .forces-page-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

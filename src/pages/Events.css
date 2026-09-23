@@ -1,0 +1,129 @@
+.events-page {
+  background: #fff;
+  padding: 2.5rem 1.5rem 6rem;
+}
+
+.events-page-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.events-page-eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--accent);
+  border-bottom: 2px solid var(--accent);
+  display: inline-block;
+  padding-bottom: 0.4rem;
+  margin: 0 0 1.25rem;
+}
+
+.events-page-title {
+  font-size: 2.25rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 0 0 2rem;
+}
+
+.events-page-subtitle {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 0 0 1.75rem;
+}
+
+.events-page-title-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 0 0 1.75rem;
+}
+
+.events-page-title-row .events-page-subtitle {
+  margin: 0;
+}
+
+.events-page-sports-badge {
+  max-width: 70px;
+  width: 14vw;
+  height: auto;
+}
+
+.events-page-copy {
+  color: #1a1a1a;
+  font-size: 1.05rem;
+  line-height: 1.75;
+}
+
+.events-page-copy p {
+  margin: 0 0 1.25rem;
+}
+
+.events-page-section {
+  margin-top: 4.5rem;
+  padding-top: 3.5rem;
+  border-top: 1px solid #e5e5e5;
+}
+
+.events-page-table-wrap {
+  overflow-x: auto;
+}
+
+.events-page-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.98rem;
+}
+
+.events-page-table th,
+.events-page-table td {
+  text-align: left;
+  padding: 0.85rem 1rem;
+  border-bottom: 1px solid #e5e5e5;
+  color: #1a1a1a;
+}
+
+.events-page-table th {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--accent);
+  white-space: nowrap;
+}
+
+.events-page-table td:last-child,
+.events-page-table th:last-child {
+  white-space: nowrap;
+}
+
+.events-page-time {
+  color: #666;
+}
+
+.events-page-footnote {
+  margin: 1.5rem 0 0;
+  color: #555;
+  font-style: italic;
+}
+
+@media (max-width: 640px) {
+  .events-page-title {
+    font-size: 1.75rem;
+  }
+
+  .events-page-subtitle {
+    font-size: 1.35rem;
+  }
+
+  .events-page-table {
+    font-size: 0.9rem;
+  }
+
+  .events-page-table th,
+  .events-page-table td {
+    padding: 0.65rem 0.6rem;
+  }
+}

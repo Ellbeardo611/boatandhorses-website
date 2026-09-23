@@ -1,0 +1,129 @@
+.stables-page {
+  background: #fff;
+  padding: 2.5rem 1.5rem 6rem;
+}
+
+.stables-page-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.stables-page-eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--accent);
+  border-bottom: 2px solid var(--accent);
+  display: inline-block;
+  padding-bottom: 0.4rem;
+  margin: 0 0 1.25rem;
+}
+
+.stables-page-title {
+  font-size: 2.25rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 0 0 2rem;
+}
+
+.stables-page-subtitle {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 0 0 1.75rem;
+}
+
+.stables-page-copy {
+  color: #1a1a1a;
+  font-size: 1.05rem;
+  line-height: 1.75;
+}
+
+.stables-page-copy p {
+  margin: 0 0 1.25rem;
+}
+
+.stables-page-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin: 2rem 0 1rem;
+}
+
+.stables-page-gallery-item {
+  border-radius: 10px;
+  overflow: hidden;
+  background: #f2f2f5;
+  aspect-ratio: 4 / 3;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.stables-page-gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.stables-page-section {
+  margin-top: 4.5rem;
+  padding-top: 3.5rem;
+  border-top: 1px solid #e5e5e5;
+}
+
+.stables-page-table-wrap {
+  overflow-x: auto;
+}
+
+.stables-page-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.98rem;
+}
+
+.stables-page-table th,
+.stables-page-table td {
+  text-align: left;
+  padding: 0.85rem 1rem;
+  border-bottom: 1px solid #e5e5e5;
+  color: #1a1a1a;
+}
+
+.stables-page-table th {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--accent);
+  white-space: nowrap;
+}
+
+.stables-page-cta {
+  display: block;
+  width: fit-content;
+  margin: 3.5rem auto 0;
+  text-align: center;
+}
+
+@media (max-width: 720px) {
+  .stables-page-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .stables-page-title {
+    font-size: 1.75rem;
+  }
+
+  .stables-page-subtitle {
+    font-size: 1.35rem;
+  }
+
+  .stables-page-gallery {
+    grid-template-columns: 1fr;
+  }
+}
